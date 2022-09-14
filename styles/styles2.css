@@ -1,0 +1,19 @@
+.main-photo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../images/ba1.jpg");
+  background-repeat: no-repeat;
+}
+
+.underline-dot {
+  border-bottom: thin dashed black;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-photo {
+  font-size: 1.5rem;
+  }
+  
+  footer {
+    font-size: 1.5rem;
+  }
+}
