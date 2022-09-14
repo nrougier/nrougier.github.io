@@ -1,96 +1,19 @@
-.navbar {
-  padding: 0 100px;
-}
-
 .main-photo {
-  text-align: right;
-  color: white;
-  padding: 300px 150px 300px 50%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
   url("../images/ba1.jpg");
-}
-
-.btn-talk {
-  background-color: transparent;
-  border: thin solid white;
-}
-
-.btn-buy-tickets {
-  background-color: #29a744;
-  border: none;
-}
-
-.header-cards {
-  text-align: center;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-}
-
-.cards span {
-  font-weight: bold;
-  padding: 2px;
-  border-radius: 5px;
-}
-
-.card-individual {
-  width: 400px;
-  height: 650px;
-  margin: 20px;
-  border: 1px solid gray;
-  border-radius: 5px;
-}
-
-.card-text {
-  padding: 20px;
-}
-
-.javascript {
-  background-color: #ffc207;
-}
-
-.react{
-  background-color: #15a3bb;
-  color: white;
-}
-
-.business {
-  background-color: #6b767a;
-  color: white;
-}
-
-.startups {
-  background-color: #dc3546;
-  color: white;
-}
-
-.photo-bsas-honolulu {
-  padding: 0;
-}
-
-.text-bsas-honolulu {
-  background-color: #353a40;
-  color: white;
-  padding: 20px;
+  background-repeat: no-repeat;
 }
 
 .underline-dot {
-  text-decoration: dotted;
+  border-bottom: thin dashed black;
 }
 
-.form-header {
-  text-align: center;
+@media screen and (min-width: 1200px) {
+  .main-photo {
+  font-size: 1.5rem;
+  }
+  
+  footer {
+    font-size: 1.5rem;
+  }
 }
-
-.form-body {
-  margin: auto;
-}
-
-main button {
-  padding: 8px 14px;
-  border-radius: 6px;
-  color: white;
-}
-
