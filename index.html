@@ -17,30 +17,30 @@
         <div class="navbar-nav ">
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" href="#">La conferencia</a>
-          <a class="nav-link" href="#">los oradores</a>
-          <a class="nav-link" href="#">El lugar y la fecha</a>
-          <a class="nav-link" href="#">Conviertete en orador</a>
-          <a class="nav-link text-success" href="#">Comprar tickets</a>
+          <a class="nav-link" href="#conference">La conferencia</a>
+          <a class="nav-link" href="#speakers">los oradores</a>
+          <a class="nav-link" href="#place">El lugar y la fecha</a>
+          <a class="nav-link" href="#join-us">Conviertete en orador</a>
+          <a class="nav-link text-success" href="https://www.buenosaires.gob.ar/educacion/codo-codo" target="_blank">Comprar tickets</a>
         </div>
       </div>
     </div>
   </nav>
   <main>
-    <article class="container-fluid main-photo text-end text-white py-5 px-3 vh-100">
+    <article id="conference" class="container-fluid main-photo text-end text-white py-5 px-3 vh-100">
       <div class="row align-items-center h-100 me-xl-5">
         <section class="col-12 col-lg-6 offset-lg-6">
           <h1>Conf Bs As</h1>
           <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
           <br>  
-          <button class="border border-white rounded bg-transparent text-white p-1">Quiero ser orador</button>
-          <button class="border-0 rounded bg-success text-white p-1">Comprar tickets</button>
+          <a class="border border-white rounded bg-transparent text-white p-1 text-decoration-none" href="#join-us">Quiero ser orador</a>
+          <a class="border-0 rounded bg-success text-white p-1 text-decoration-none" href="https://www.buenosaires.gob.ar/educacion/codo-codo" target="_blank">Comprar tickets</a>
         </section>
       </div>
     </article>    
     <article class="container-fluid">
       <section class="row">
-        <article class="col-12 text-center">
+        <article id="speakers" class="col-12 text-center">
           <p>CONOCE A LOS</p>
           <h2>ORADORES</h2>
         </article>
@@ -72,7 +72,7 @@
           </div>
       </section>
     </article>
-    <article class="container-fluid">
+    <article id="place" class="container-fluid">
       <section class="row">
         <div class="col-12 col-lg-6 p-0">
           <img src="./images/honolulu.jpg" alt="foto de honolulu" class="w-100">
@@ -80,11 +80,11 @@
         <div class="col-12 col-lg-6 text-white bg-dark p-3">
           <h2>Bs As - Octubre</h2>
           <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de superficie).</p>
-          <button class="border-light rounded bg-transparent text-white-50">Conoc&#233; M&#225;s</button>
+          <a href="https://es.wikipedia.org/wiki/Buenos_Aires" target="_blank" class="btn border-light rounded bg-transparent text-white text-decoration-none">Conoc&#233; M&#225;s</a>
         </div>
       </section>
     </article>
-    <article class="container py-3">
+    <article id="join-us" class="container py-3">
       <header class="row">
         <section class="text-center">
           <p>CONVI&#201;RTETE EN UN</p>
@@ -110,14 +110,14 @@
     </article>
   </main>
   <footer class="container-fluid bg-dark bg-opacity-75 py-3">
-    <section class="row text-white p-3 mx-lg-0 justify-content-evenly align-items-center">
-      <div class="col-6 col-md-4 col-lg-3 col-xl-1">Preguntas frecuentes</div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-1">Contactanos</div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-1">Prensa</div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-1">Conferencias</div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-1">terminos y condiciones</div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-1">Privacidad</div>
-      <div class="col-12 col-md-12 col-lg-3 col-xl-1">Estudiantes</div>
+    <section class="row p-3 mx-lg-0 justify-content-evenly align-items-center">
+      <a href="#" class="col-6 col-md-4 col-lg-3 col-xl-1 text-white text-decoration-none">Contactanos</a>
+      <a href="#" class="col-6 col-md-4 col-lg-3 col-xl-1 text-white text-decoration-none">Preguntas frecuentes</a>
+      <a href="#" class="col-6 col-md-4 col-lg-3 col-xl-1 text-white text-decoration-none">Prensa</a>
+      <a href="#" class="col-6 col-md-4 col-lg-3 col-xl-1 text-white text-decoration-none">Conferencias</a>
+      <a href="#" class="col-6 col-md-4 col-lg-3 col-xl-1 text-white text-decoration-none">terminos y condiciones</a>
+      <a href="#" class="col-6 col-md-4 col-lg-3 col-xl-1 text-white text-decoration-none">Privacidad</a>
+      <a href="#" class="col-12 col-md-12 col-lg-3 col-xl-1 text-white text-decoration-none">Estudiantes</a>
     </section>
   </footer>
 
