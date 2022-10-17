@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Codo a Codo 4.0 - Conferencia Bs As</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="./styles/styles.css">
-</head>
-<body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-xl-5 fs-5">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"> <img src="./images/codoacodo.png" width="100px" alt=""> Conf Bs As</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codo a Codo 4.0 - Conferencia Bs As</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar 
+      navbar-expand-md
+      navbar-dark
+      bg-dark
+      px-xl-5
+      fs-5
+      position-sticky top-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/codoacodo.png" width="100px" alt="" /> Conf Bs As</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="navbar-nav">
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
@@ -21,111 +39,226 @@
               <a class="nav-link" href="#speakers">los oradores</a>
               <a class="nav-link" href="#place">El lugar y la fecha</a>
               <a class="nav-link" href="#join-us">Conviertete en orador</a>
-              <a class="nav-link text-success" href="https://www.buenosaires.gob.ar/educacion/codo-codo" target="_blank">Comprar tickets</a>
+              <a class="nav-link text-success" href="#buy-tickets" onclick="render()">Comprar tickets</a>
             </div>
           </div>
         </div>
-    </div>
-  </nav>
-  <main>
-    <article id="conference" class="container-fluid main-photo text-end text-white py-5 px-3 vh-100">
-      <div class="row align-items-center h-100 me-xl-5">
-        <section class="col-12 col-lg-6 offset-lg-6">
-          <h1>Conf Bs As</h1>
-          <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-          <br>  
-          <a class="border border-white rounded bg-transparent text-white p-1 text-decoration-none" href="#join-us">Quiero ser orador</a>
-          <a class="border-0 rounded bg-success text-white p-1 text-decoration-none" href="https://www.buenosaires.gob.ar/educacion/codo-codo" target="_blank">Comprar tickets</a>
-        </section>
       </div>
-    </article>    
-    <article class="container-fluid">
-      <section class="row">
-        <article id="speakers" class="col-12 text-center">
-          <p>CONOCE A LOS</p>
-          <h2>ORADORES</h2>
-        </article>
-      </section>
-      <section class="row py-4">
+    </nav>
+    <main>
+      <article
+        id="conference"
+        class="container-fluid main-photo text-end text-white py-5 px-3 vh-100">
+        <div class="row align-items-center h-100 me-xl-5">
+          <section class="col-12 col-lg-6 offset-lg-6">
+            <h1>Conf Bs As</h1>
+            <p>
+              Bs As llega por primera vez a Argentina. Un evento para compartir
+              con nuestra comunidad el conocimiento y experiencia de los
+              expertos que estan creando el futuro de Internet. Ven a conocer a
+              miembros del evento, a otros estudiantes de Codo a Codo y a los
+              oradores de primer nivel que tenemos para ti. Te esperamos!
+            </p>
+            <br />
+            <a class="border border-white rounded bg-transparent text-white p-1 text-decoration-none"
+              href="#join-us">Quiero ser orador</a>
+            <a class="border-0 rounded bg-success text-white p-1 text-decoration-none"
+              href="#buy-tickets"
+              onclick="render()">Comprar tickets</a>
+          </section>
+        </div>
+      </article>
+      <article class="container-fluid">
+        <section class="row">
+          <article id="speakers" class="col-12 text-center">
+            <p>CONOCE A LOS</p>
+            <h2>ORADORES</h2>
+          </article>
+        </section>
+        <section class="row py-4">
           <div class="card col-12 col-md-3 offset-md-1 col-lg-3">
-            <img src="./images/steve.jpg" class="card-img-top" alt="Foto de Steve">
+            <img
+              src="./images/steve.jpg"
+              class="card-img-top"
+              alt="Foto de Steve"
+            />
             <div class="card-body">
-              <p><span class="badge rounded-pill bg-warning text-dark me-1">JavaScript</span><span class="badge rounded-pill bg-info text-white">React</span></p>
+              <p>
+                <span class="badge rounded-pill bg-warning text-dark me-1"
+                  >JavaScript</span
+                ><span class="badge rounded-pill bg-info text-white"
+                  >React</span
+                >
+              </p>
               <h5 class="card-title">Steve Jobs</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti libero accusantium quo amet sit inventore velit beatae, nulla rerum exercitationem ullam accusamus vero explicabo possimus.</p>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti libero accusantium quo amet sit inventore velit beatae,
+                nulla rerum exercitationem ullam accusamus vero explicabo
+                possimus.
+              </p>
             </div>
           </div>
           <div class="card col-12 col-md-3 mx-md-5 col-lg-3">
-            <img src="./images/bill.jpg" class="card-img-top" alt="Foto de Bill">
+            <img
+              src="./images/bill.jpg"
+              class="card-img-top"
+              alt="Foto de Bill"
+            />
             <div class="card-body">
-              <p><span class="badge rounded-pill bg-warning text-dark me-1">JavaScript</span><span class="badge rounded-pill bg-info text-white">React</span></p>
+              <p>
+                <span class="badge rounded-pill bg-warning text-dark me-1"
+                  >JavaScript</span
+                ><span class="badge rounded-pill bg-info text-white"
+                  >React</span
+                >
+              </p>
               <h5 class="card-title">Bill Gates</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolores corrupti dolorem numquam aliquid, enim cupiditate eaque odio velit dolore dolor sapiente illum adipisci soluta!</p>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium dolores corrupti dolorem numquam aliquid, enim
+                cupiditate eaque odio velit dolore dolor sapiente illum adipisci
+                soluta!
+              </p>
             </div>
           </div>
           <div class="card col-12 col-md-3 col-lg-3">
-            <img src="./images/ada.jpeg" class="card-img-top" alt="foto de Ada">
+            <img
+              src="./images/ada.jpeg"
+              class="card-img-top"
+              alt="foto de Ada"
+            />
             <div class="card-body">
-              <p><span class="badge rounded-pill bg-secondary me-1">Negocios</span><span class="badge rounded-pill bg-danger">Startups</span></p>
+              <p>
+                <span class="badge rounded-pill bg-secondary me-1"
+                  >Negocios</span
+                ><span class="badge rounded-pill bg-danger">Startups</span>
+              </p>
               <h5 class="card-title">Ada Lovelace</h5>
-              <p class="card-text ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia cum fugiat accusamus! Sed maxime quasi eos, numquam velit cumque eius eligendi alias, ducimus nihil commodi?</p>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                cum fugiat accusamus! Sed maxime quasi eos, numquam velit cumque
+                eius eligendi alias, ducimus nihil commodi?
+              </p>
             </div>
           </div>
-      </section>
-    </article>
-    <article id="place" class="container-fluid">
-      <section class="row">
-        <div class="col-12 col-lg-6 p-0">
-          <img src="./images/honolulu.jpg" alt="foto de honolulu" class="w-100">
-        </div>
-        <div class="col-12 col-lg-6 text-white bg-dark p-3">
-          <h2>Bs As - Octubre</h2>
-          <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de superficie).</p>
-          <a href="https://es.wikipedia.org/wiki/Buenos_Aires" target="_blank" class="btn border-light rounded bg-transparent text-white text-decoration-none">Conoc&#233; M&#225;s</a>
-        </div>
-      </section>
-    </article>
-    <article id="join-us" class="container py-3">
-      <header class="row">
-        <section class="text-center">
-          <p>CONVI&#201;RTETE EN UN</p>
-          <h2>ORADOR</h2>
-          <p>Anotate como orador para dar una <span class="underline-dot">charla ignite</span>. Cuentanos de que quieres hablar!</p> 
         </section>
-      </header>
-      <section class="row col-12 col-lg-6 mx-auto">
-        <div class="mb-3 col-lg-6">
-          <input type="text" class="form-control" id="name" placeholder="Nombre">
-        </div>
-        <div class="mb-3 col-lg-6">
-          <input type="text" class="form-control" id="last-name" placeholder="Apellido">
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" id="talk" rows="3" placeholder="Sobre qu&#233; quieres hablar?"></textarea>
-          <p><small>Recuerda incluir un titulo para tu charla</small></p>
-        </div>
-        <div>
-          <button class="w-100 bg-success text-white rounded border-0 py-2">Enviar</button>
+      </article>
+      <article id="place" class="container-fluid">
+        <section class="row">
+          <div class="col-12 col-lg-6 p-0">
+            <img
+              src="./images/honolulu.jpg"
+              alt="foto de honolulu"
+              class="w-100"
+            />
+          </div>
+          <div class="col-12 col-lg-6 text-white bg-dark p-3">
+            <h2>Bs As - Octubre</h2>
+            <p>
+              Buenos Aires es la provincia y localidad más grande del estado de
+              Argentina, en los Estados Unidos. Honolulu es la más sureña de
+              entre las principales ciudades estadounidenses. Aunque el nombre
+              de Honolulu se refiere al área urbana en la costa sureste de la
+              isla de Oahu, la ciudad y el condado de Honolulu han formado una
+              ciudad condado consolidada que cubre toda la ciudad
+              (aproximadamente 600 km² de superficie).
+            </p>
+            <a
+              href="https://es.wikipedia.org/wiki/Buenos_Aires"
+              target="_blank"
+              class="btn border-light rounded bg-transparent text-white text-decoration-none"
+              >Conoc&#233; M&#225;s</a
+            >
+          </div>
+        </section>
+      </article>
+      <article id="join-us" class="container py-3">
+        <header class="row">
+          <section class="text-center">
+            <p>CONVI&#201;RTETE EN UN</p>
+            <h2>ORADOR</h2>
+            <p>
+              Anotate como orador para dar una
+              <span class="underline-dot">charla ignite</span>. Cuentanos de que
+              quieres hablar!
+            </p>
+          </section>
+        </header>
+        <section class="row col-12 col-lg-6 mx-auto">
+          <div class="mb-3 col-lg-6">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Nombre"
+            />
+          </div>
+          <div class="mb-3 col-lg-6">
+            <input
+              type="text"
+              class="form-control"
+              id="last-name"
+              placeholder="Apellido"
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              id="talk"
+              rows="3"
+              placeholder="Sobre qu&#233; quieres hablar?"
+            ></textarea>
+            <p><small>Recuerda incluir un titulo para tu charla</small></p>
+          </div>
+          <div>
+            <button class="w-100 bg-success text-white rounded border-0 py-2">
+              Enviar
+            </button>
+          </div>
+        </section>
+      </article>
+      <article id="buy-tickets" class="container">
+        <!-- innterHTML BuyTickets -->
+      </article>
+    </main>
+    <footer class="container-fluid bg-dark bg-opacity-75 py-3">
+      <section class="row justify-content-center">
+        <div class="col-11 col-md-10 m-2">
+          <div class="row  justify-content-evenly">
+            <div class="col-6 col-md-4 col-lg">
+              <a href="#" class="text-white text-decoration-none">Preguntas frecuentes</a>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+              <a href="#" class="text-white text-decoration-none">Contáctanos</a>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+              <a href="#" class="text-white text-decoration-none">Prensa</a>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+              <a href="#" class="text-white text-decoration-none">Conferencias</a>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+              <a href="#" class="text-white text-decoration-none">Términos y Condiciones</a>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+              <a href="#" class="text-white text-decoration-none">Privacidad</a>
+            </div>
+            <div class="col-12 col-md-4 col-lg">
+              <a href="#" class="text-white text-decoration-none">Estudiantes</a>
+            </div>
+          </div>  
         </div>
       </section>
-    </article>
-  </main>
-  <footer class="container-fluid bg-dark bg-opacity-75 py-3">
-    <section class="row p-3 mx-lg-0 justify-content-evenly align-items-center">
-      <a href="#" class="col-6 col-md-4 col-lg-3 col-xl-1 text-white text-decoration-none">Contactanos</a>
-      <a href="#" class="col-6 col-md-4 col-lg-3 col-xl-1 text-white text-decoration-none">Preguntas frecuentes</a>
-      <a href="#" class="col-6 col-md-4 col-lg-3 col-xl-1 text-white text-decoration-none">Prensa</a>
-      <a href="#" class="col-6 col-md-4 col-lg-3 col-xl-1 text-white text-decoration-none">Conferencias</a>
-      <a href="#" class="col-6 col-md-4 col-lg-3 col-xl-1 text-white text-decoration-none">terminos y condiciones</a>
-      <a href="#" class="col-6 col-md-4 col-lg-3 col-xl-1 text-white text-decoration-none">Privacidad</a>
-      <a href="#" class="col-12 col-md-12 col-lg-3 col-xl-1 text-white text-decoration-none">Estudiantes</a>
-    </section>
-  </footer>
-
-
-
-
-   <!-- js  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    </footer>
+    <!-- js  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/html-buy-tickets.js"></script>
+    <script src="./scripts/script-buy-tickets.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
