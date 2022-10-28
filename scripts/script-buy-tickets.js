@@ -1,12 +1,11 @@
 function Buy(){
   
-  const numberOfTickets = document.getElementById('quantity').value;
-  const valueOfTickets = document.getElementById('value').innerHTML;
-  const nameValue = document.getElementById('nameValue').value;
-  const lastNameValue = document.getElementById('lastNameValue').value;
-  const mailValue = document.getElementById('mailValue').value;
-  
   const discountValue = discount();
+  const mailValue = document.getElementById('mailValue').value;
+  const nameValue = document.getElementById('nameValue').value;
+  const numberOfTickets = document.getElementById('quantity').value;
+  const lastNameValue = document.getElementById('lastNameValue').value;
+  const valueOfTickets = document.getElementById('value').innerHTML;
   
   if (nameValue !== '' && lastNameValue !== '' && mailValue !== '') {
     amountToPay(numberOfTickets, valueOfTickets, discountValue);
@@ -14,11 +13,7 @@ function Buy(){
     alert('Faltan compretar datos')
   }
 
-
-
   console.log(`Usted selecciono ${numberOfTickets} ticket/s por un valor de ${valueOfTickets} cada uno y un descuento de ${discountValue}% haciendo un total de $ ${document.getElementById('amount').innerHTML}`)
-  //console.log(`Costo de cada ticket $ ${valueOfTickets}`)
-  //console.log(`Descuento de ${discountValue}%`)
 }
 
 function discount() {
