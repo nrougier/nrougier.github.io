@@ -30,7 +30,7 @@ function BuyTickets() {
           <form id="reset">
             <div class="row justify-content-center">
               <div class="col-12 col-lg px-0 mb-2 mb-lg-0 ps-lg-0 pe-lg-1">
-                <input id="nameValue" type="text" class="form-control" placeholder="Nombre" />
+                <input id="nameValue" required type="text" class="form-control" placeholder="Nombre" />
               </div>
               <div class="col-12 col-lg px-0 mt-2 mt-lg-0 ps-lg-1 pe-lg-0">
                 <input id="lastNameValue" type="text" class="form-control" placeholder="Apellido" />
@@ -39,7 +39,7 @@ function BuyTickets() {
           
             <div class="row">
               <div class="col px-0 my-3">
-                <input id="mailValue" type="text" class="form-control" placeholder="Correo" />
+                <input id="mailValue" type="email" class="form-control" placeholder="Correo" />
               </div>
             </div>
           
@@ -65,10 +65,10 @@ function BuyTickets() {
             </div>
           
             <div class="row">
-              <button onclick="reset()" class="col-12 col-lg mb-1 me-lg-1 my-lg-3 py-2 bg-success text-white rounded border-0">
+              <button type="button" onclick="reset()" class="col-12 col-lg mb-1 me-lg-1 my-lg-3 py-2 bg-success text-white rounded border-0">
                 Borrar
               </button>
-              <button onclick="Buy()" class="col-12 col-lg ms-lg-1 py-2 my-3 bg-success text-white rounded border-0">
+              <button type="button" onclick="Buy()" class="col-12 col-lg ms-lg-1 py-2 my-3 bg-success text-white rounded border-0">
                 Resumen
               </button>
             </div>
